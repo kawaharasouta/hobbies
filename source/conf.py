@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'hobys'
+project = 'hobbies'
 copyright = '2020, khwarizmi'
 author = 'khwarizmi'
 
