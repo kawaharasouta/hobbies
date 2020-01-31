@@ -1,3 +1,13 @@
-.. include:: archage.rst
-.. include:: mariocart8DX.rst
-.. include:: splatoon2.rst
+:orphan:
+
+========
+GAMES
+========
+
+.. toctree::
+  :maxdepth: 1
+  :caption: GAMES:
+
+  ./archeage
+  ./mariocart8DX
+  ./splatoon2
