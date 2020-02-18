@@ -7,6 +7,7 @@ If you browse this page, you must read :doc:`README`.
   :maxdepth: 1
   :caption: GAMES:
 
+  games/first_of_games
   games/archeage
   games/mariocart8DX
   games/splatoon2
