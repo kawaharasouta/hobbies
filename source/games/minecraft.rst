@@ -3,8 +3,8 @@
 ==================
 
 
-サーバ構築
-===========
+サーバ構築メモ
+===============
 
 とりあえずhttps://www.howtoforge.com/tutorial/minecraft-server-ubuntu/を参考にしたやつ
 クライアントのバージョンで怒られる?(クラはもちろん最新)
@@ -41,3 +41,10 @@ ubuntu1804
   + enable-rcon=true
   $ java -Xmx512M -Xms512M -jar server.jar nogui
 
+対応
+
+::
+
+  $ wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar  ### バージョンを逐一確認するべき
+  (https://www.minecraft.net/ja-jp/download/server)
+  して，~/server/eula.txtの編集だけするようにしたらとりあえずできた．
