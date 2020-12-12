@@ -97,8 +97,8 @@ http://www.mediafire.com/file/bknbzxz05dbl37n/Mizuno%2527s_16_Craft_JE_1.16.4-1.
 - DigAll
 - MineAll
 
-
-
+https://www.curseforge.com/minecraft/mc-mods/break-all-of-the-same-block-and-more/files
+https://minecraft.fandom.com/ja/wiki/%E4%BE%BF%E5%88%A9%E7%B3%BBMOD
 
 
 
