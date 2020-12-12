@@ -3,8 +3,8 @@
 ==================
 
 
-サーバ構築メモ
-===============
+サーバ構築HelloWorld
+=======================
 
 とりあえずhttps://www.howtoforge.com/tutorial/minecraft-server-ubuntu/を参考にしたやつ
 クライアントのバージョンで怒られる?(クラはもちろん最新)
@@ -48,3 +48,63 @@ ubuntu1804
   $ wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar  ### バージョンを逐一確認するべき
   (https://www.minecraft.net/ja-jp/download/server)
   して，~/server/eula.txtの編集だけするようにしたらとりあえずできた．
+
+
+
+Mod
+=======
+
+いくつか種類があるのでまずはそれの説明
+
+- Minecraft Forge
+- 
+
+
+
+クライアントmodでとりあえず導入した方がいいやつ
+-------------------------------------------------
+
+※ちなみにこれはforge
+
+optifineとシェーダー
+`````````````````````
+
+optifine自体は軽量化modで，描画処理のパフォーマンス向上のためのもの．
+シェーダーは基本的にこれを前提としている?ので，導入すべき．
+ただ，描画系のmodはこれを競合を起こすことがよくある．
+
+optifineとKUDA-Shaders(最も有名なシェーダー?)の導入について: https://homanage.net/game/index.php?category=minecraft&name=kage
+
+その他リンク:
+- optifine公式: https://optifine.net/home
+- KUDA-Shaders公式: https://dedelner.net/kuda-shaders/
+
+テクスチャパックについて
+``````````````````````````
+
+ブロックやモブやアイテムやインタフェースのテクスチャを変えるためのファイル群のこと．
+
+https://minecraft-ja.gamepedia.com/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF#:~:text=%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%20(Texture%20pack)%E3%81%AF,%E3%81%8C%E6%A0%BC%E7%B4%8D%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82
+
+とりあえず小さくて良さげなテクスチャパック: 
+https://mizunomcmemo.blogspot.com/p/resourcepack.html
+http://www.mediafire.com/file/bknbzxz05dbl37n/Mizuno%2527s_16_Craft_JE_1.16.4-1.0.zip/file
+
+一括破壊系
+````````````
+
+- CutAll
+- DigAll
+- MineAll
+
+
+
+
+
+
+
+
+
+
+
+

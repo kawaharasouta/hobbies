@@ -42,8 +42,8 @@
             
   <div class="section" id="id1">
 <h1>マインクラフト<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>サーバ構築メモ<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="helloworld">
+<h2>サーバ構築HelloWorld<a class="headerlink" href="#helloworld" title="Permalink to this headline">¶</a></h2>
 <p>とりあえずhttps://www.howtoforge.com/tutorial/minecraft-server-ubuntu/を参考にしたやつ
 クライアントのバージョンで怒られる?(クラはもちろん最新)
 ubuntu1804</p>
@@ -82,6 +82,44 @@ $ java -Xmx512M -Xms512M -jar server.jar nogui
 (https://www.minecraft.net/ja-jp/download/server)
 して，~/server/eula.txtの編集だけするようにしたらとりあえずできた．
 </pre></div>
+</div>
+</div>
+<div class="section" id="mod">
+<h2>Mod<a class="headerlink" href="#mod" title="Permalink to this headline">¶</a></h2>
+<p>いくつか種類があるのでまずはそれの説明</p>
+<ul class="simple">
+<li>Minecraft Forge</li>
+<li></li>
+</ul>
+<div class="section" id="id2">
+<h3>クライアントmodでとりあえず導入した方がいいやつ<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>※ちなみにこれはforge</p>
+<div class="section" id="optifine">
+<h4>optifineとシェーダー<a class="headerlink" href="#optifine" title="Permalink to this headline">¶</a></h4>
+<p>optifine自体は軽量化modで，描画処理のパフォーマンス向上のためのもの．
+シェーダーは基本的にこれを前提としている?ので，導入すべき．
+ただ，描画系のmodはこれを競合を起こすことがよくある．</p>
+<p>optifineとKUDA-Shaders(最も有名なシェーダー?)の導入について: <a class="reference external" href="https://homanage.net/game/index.php?category=minecraft&amp;name=kage">https://homanage.net/game/index.php?category=minecraft&amp;name=kage</a></p>
+<p>その他リンク:
+- optifine公式: <a class="reference external" href="https://optifine.net/home">https://optifine.net/home</a>
+- KUDA-Shaders公式: <a class="reference external" href="https://dedelner.net/kuda-shaders/">https://dedelner.net/kuda-shaders/</a></p>
+</div>
+<div class="section" id="id3">
+<h4>テクスチャパックについて<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>ブロックやモブやアイテムやインタフェースのテクスチャを変えるためのファイル群のこと．</p>
+<p><a class="reference external" href="https://minecraft-ja.gamepedia.com/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF#:~:text=%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%20(Texture%20pack)%E3%81%AF,%E3%81%8C%E6%A0%BC%E7%B4%8D%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82">https://minecraft-ja.gamepedia.com/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF#:~:text=%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%91%E3%83%83%E3%82%AF%20(Texture%20pack)%E3%81%AF,%E3%81%8C%E6%A0%BC%E7%B4%8D%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82</a></p>
+<p>とりあえず小さくて良さげなテクスチャパック:
+<a class="reference external" href="https://mizunomcmemo.blogspot.com/p/resourcepack.html">https://mizunomcmemo.blogspot.com/p/resourcepack.html</a>
+<a class="reference external" href="http://www.mediafire.com/file/bknbzxz05dbl37n/Mizuno%2527s_16_Craft_JE_1.16.4-1.0.zip/file">http://www.mediafire.com/file/bknbzxz05dbl37n/Mizuno%2527s_16_Craft_JE_1.16.4-1.0.zip/file</a></p>
+</div>
+<div class="section" id="id4">
+<h4>一括破壊系<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>CutAll</li>
+<li>DigAll</li>
+<li>MineAll</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
