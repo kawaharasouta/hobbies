@@ -6,6 +6,8 @@
 サーバ構築HelloWorld
 =======================
 
+**バニラ**
+
 とりあえずhttps://www.howtoforge.com/tutorial/minecraft-server-ubuntu/を参考にしたやつ
 クライアントのバージョンで怒られる?(クラはもちろん最新)
 ubuntu1804
@@ -49,7 +51,29 @@ ubuntu1804
   (https://www.minecraft.net/ja-jp/download/server)
   して，~/server/eula.txtの編集だけするようにしたらとりあえずできた．
 
+**統合版**
 
+::
+
+  $ wget [url]    ※https://minecraft.gamepedia.com/Bedrock_Edition_1.16.200 ここからdownloadのところからコピる．
+  $ unzip [落ちてきたファイル]
+  $ ./bedrock_server
+
+**forge**
+
+spigot
+
+
+バージョン問題に関して
+=========================
+
+僕がずっとプレイヤーたちはどうしているのか気になっていたバージョン問題に関して，一つの回答を示しているサイトがあった．
+
+https://riminosu13.hatenablog.com/entry/2020/08/24/192012
+
+modの数が多いので，1.12.2か1.7.10が良いとのこと．
+
+大手modサイト curseforge: https://www.curseforge.com/minecraft/mc-mods
 
 Mod
 =======
@@ -57,7 +81,8 @@ Mod
 いくつか種類があるのでまずはそれの説明
 
 - Minecraft Forge
-- 
+- Spigot(Bukit?)
+- Spongeforge
 
 
 
