@@ -90,8 +90,19 @@ $ unzip [落ちてきたファイル]
 $ ./bedrock_server
 </pre></div>
 </div>
-<p><strong>forge</strong></p>
-<p>spigot</p>
+<p><strong>forge</strong>
+ver 1.12.2でやってる．</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2854/forge-1.12.2-14.23.5.2854-installer.jar[:w
+$ wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2854/forge-1.12.2-14.23.5.2854-universal.jar
+$ java -jar ./forge-1.12.2-14.23.5.2854-installer.jar nogui --installServer
+$ java -Xms512M -Xmx 512M -jar forge-1.12.2-14.23.5.2854-universal.jar nogui
+$ vim eula.txt
+- eula=false
++ eula=true
+$ java -Xms512M -Xmx 512M -jar forge-1.12.2-14.23.5.2854-universal.jar nogui
+</pre></div>
+</div>
+<p><strong>spigot</strong></p>
 </div>
 <div class="section" id="id2">
 <h2>バージョン問題に関して<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
