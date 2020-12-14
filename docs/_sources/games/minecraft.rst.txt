@@ -16,7 +16,7 @@ ubuntu1804
 
   $ sudo apt update
   $ sudo apt install git build-essential
-  $ sudo apt install openjdk-11-jre-headless
+  $ sudo apt install openjdk-11-jre-headless    //これ8ジャネ
   $ sudo useradd -r -m -U -d /opt/minecraft -s /bin/bash minecraft
   $ sudo passwd minecraft
   $ su - minecraft
@@ -75,7 +75,20 @@ ver 1.12.2でやってる．
 
 
 **spigot**
+https://hub.spigotmc.org/jenkins/job/BuildTools/
+軽いって噂だったけどめっちゃ重いんだよね．
+もしかしたらチャンクが多いのかもしれん．
 
+::
+
+  $ wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+  $ java -Xmx512M -jar BuildTools.jar --rev 1.16.4     // 多分メモリもっと上げないと普通に死ぬ．
+  $ java -Xms512M -Xmx512M -jar ./spigot-1.16.4.jar nogui
+  $ vim eula.txt
+  - eula=false
+  + eula=true
+  $ java -Xms512M -Xmx512M -jar ./spigot-1.16.4.jar nogui
+  
 
 バージョン問題に関して
 =========================
@@ -153,7 +166,43 @@ https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay
 葉っぱすぐ消えるmod．Cutallでも似たようなことできるけど，多分あっちの機能使うと葉っぱ分耐久が落ちそうな気がする．(そうした方が実装楽)からこれ入れた．
 サーバだけでいい．
 
+Map
+-------
 
+Xareros World Map:
+https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map
+
+とりあえず，高機能すぎるものが多いので，全体Mapだけ追加できるこれを入れた．
+本当はマーク機能も欲しかったけど，他のが本当に高機能すぎるし，かつミニマップを持ってるためこれ．
+とりあえずクライアントだけで大丈夫そう．
+
+
+サーバ管理系
+===============
+
+ホワイトリスト
+-------------------
+
+https://minecraft.server-memo.net/whitelist/
+
+
+spigotでjava版と統合版でマルチプレイする方法
+================================================
+spigotの構築のあと
+
+https://novablog.work/minecraft-crossplay/
+
+::
+
+  $ cd ~/spigot/plugins
+  $ wget https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
+  $ wget https://ci.nukkitx.com/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/bukkit/target/floodgate-bukkit.jar
+  // start stop, make configs
+  $ vim 
+  iroiro
+  $ vim 
+  iroiro
+  $ java 
 
 
 

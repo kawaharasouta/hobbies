@@ -50,7 +50,7 @@
 ubuntu1804</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo apt update
 $ sudo apt install git build-essential
-$ sudo apt install openjdk-11-jre-headless
+$ sudo apt install openjdk-11-jre-headless    //これ8ジャネ
 $ sudo useradd -r -m -U -d /opt/minecraft -s /bin/bash minecraft
 $ sudo passwd minecraft
 $ su - minecraft
@@ -102,7 +102,19 @@ $ vim eula.txt
 $ java -Xms512M -Xmx 512M -jar forge-1.12.2-14.23.5.2854-universal.jar nogui
 </pre></div>
 </div>
-<p><strong>spigot</strong></p>
+<p><strong>spigot</strong>
+<a class="reference external" href="https://hub.spigotmc.org/jenkins/job/BuildTools/">https://hub.spigotmc.org/jenkins/job/BuildTools/</a>
+軽いって噂だったけどめっちゃ重いんだよね．
+もしかしたらチャンクが多いのかもしれん．</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+$ java -Xmx512M -jar BuildTools.jar --rev 1.16.4     // 多分メモリもっと上げないと普通に死ぬ．
+$ java -Xms512M -Xmx512M -jar ./spigot-1.16.4.jar nogui
+$ vim eula.txt
+- eula=false
++ eula=true
+$ java -Xms512M -Xmx512M -jar ./spigot-1.16.4.jar nogui
+</pre></div>
+</div>
 </div>
 <div class="section" id="id2">
 <h2>バージョン問題に関して<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
@@ -162,6 +174,37 @@ on/offのキーバインドはクライアント固有</p>
 <p>葉っぱすぐ消えるmod．Cutallでも似たようなことできるけど，多分あっちの機能使うと葉っぱ分耐久が落ちそうな気がする．(そうした方が実装楽)からこれ入れた．
 サーバだけでいい．</p>
 </div>
+</div>
+<div class="section" id="map">
+<h3>Map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h3>
+<p>Xareros World Map:
+<a class="reference external" href="https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map">https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map</a></p>
+<p>とりあえず，高機能すぎるものが多いので，全体Mapだけ追加できるこれを入れた．
+本当はマーク機能も欲しかったけど，他のが本当に高機能すぎるし，かつミニマップを持ってるためこれ．
+とりあえずクライアントだけで大丈夫そう．</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>サーバ管理系<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>ホワイトリスト<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://minecraft.server-memo.net/whitelist/">https://minecraft.server-memo.net/whitelist/</a></p>
+</div>
+</div>
+<div class="section" id="spigotjava">
+<h2>spigotでjava版と統合版でマルチプレイする方法<a class="headerlink" href="#spigotjava" title="Permalink to this headline">¶</a></h2>
+<p>spigotの構築のあと</p>
+<p><a class="reference external" href="https://novablog.work/minecraft-crossplay/">https://novablog.work/minecraft-crossplay/</a></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd ~/spigot/plugins
+$ wget https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
+$ wget https://ci.nukkitx.com/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/bukkit/target/floodgate-bukkit.jar
+// start stop, make configs
+$ vim
+iroiro
+$ vim
+iroiro
+$ java
+</pre></div>
 </div>
 </div>
 </div>
