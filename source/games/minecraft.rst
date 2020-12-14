@@ -128,6 +128,11 @@ https://minecraft-ja.gamepedia.com/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3
 https://mizunomcmemo.blogspot.com/p/resourcepack.html
 http://www.mediafire.com/file/bknbzxz05dbl37n/Mizuno%2527s_16_Craft_JE_1.16.4-1.0.zip/file
 
+デフォルトテクスチャの32x版のやつ．
+ベタっとした感じあるけどマイクラ感を全く損なわないのでいい．:
+https://faithful.team/faithful-1-12/
+https://www.curseforge.com/minecraft/texture-packs/faithful-32x
+
 一括破壊系
 ````````````
 
@@ -138,9 +143,15 @@ http://www.mediafire.com/file/bknbzxz05dbl37n/Mizuno%2527s_16_Craft_JE_1.16.4-1.
 https://www.curseforge.com/minecraft/mc-mods/break-all-of-the-same-block-and-more/files
 https://minecraft.fandom.com/ja/wiki/%E4%BE%BF%E5%88%A9%E7%B3%BBMOD
 
+サーバにも導入する必要あり．
+on/offのキーバインドはクライアント固有
 
+- Fast Leaf Decay
 
+https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay
 
+葉っぱすぐ消えるmod．Cutallでも似たようなことできるけど，多分あっちの機能使うと葉っぱ分耐久が落ちそうな気がする．(そうした方が実装楽)からこれ入れた．
+サーバだけでいい．
 
 
 
