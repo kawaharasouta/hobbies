@@ -185,9 +185,21 @@ https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map
 
 https://minecraft.server-memo.net/whitelist/
 
+クロスプレイ的な
+=====================
+
+SwitchでIPアドレス/ドメイン指定でサーバに接続する方法
+--------------------------------------------------------
+
+https://novablog.work/be-join-any-server/
+
+https://www.youtube.com/watch?v=TJu6Bc9KOus&feature=youtu.be
+
+https://github.com/Pugmatt/BedrockConnect
+
 
 spigotでjava版と統合版でマルチプレイする方法
-================================================
+----------------------------------------------
 spigotの構築のあと
 
 https://novablog.work/minecraft-crossplay/
