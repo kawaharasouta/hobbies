@@ -218,4 +218,11 @@ https://novablog.work/minecraft-crossplay/
   $ java 
 
 
+トラブルシューティング系
+============================
+
+linux minevarft older version crash  https://bugs.mojang.com/browse/MCL-11384
+
+→openjdk11になっとるから8にしろということ
+
 
