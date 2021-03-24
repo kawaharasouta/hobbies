@@ -17,7 +17,7 @@ If you browse this page, you must read :doc:`README`.
 
 .. toctree::
   :maxdepth: 1
-  :caption: GAMES KUSUZAKO POEM:
+  :caption: GAMES KUSOZAKO POEM:
 
   games_poem/first_of_games
   games_poem/archeage
